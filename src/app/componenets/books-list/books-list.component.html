@@ -1,0 +1,11 @@
+<p>BOOKS</p>
+
+<input (blur)='search($event)'>
+<div class="flex-container" *ngIf="books$ | async as booksRes">
+   
+    <div class = "list" *ngFor="let book of booksRes.booksList">
+      <app-book class="book"[book]="book"></app-book> 
+         
+    </div>
+   
+</div>
