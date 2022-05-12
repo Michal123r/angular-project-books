@@ -10,12 +10,12 @@ import { ProductsComponent } from './products/products.component';
   declarations: [
     ProductsPageComponent,
     ProductComponent,
-    //ProductsComponent
+    ProductsComponent
   ],
   imports: [
     CommonModule,
-    ProductsComponent
+
   ],
-  exports: [ProductsModule]
+  exports: [ProductsComponent]
 })
 export class ProductsModule { }
